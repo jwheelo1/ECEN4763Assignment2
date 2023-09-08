@@ -47,7 +47,7 @@ An XOR linked list is a memory efficient doubly linked list. It has addresses to
 - The function empty_list(self) deletes the entire linked list.
 
 ### Helper Functions (Outside of Class)
-- The function type_cast(address) converts an address address into a python object using the following code: return ctypes.cast(i_d, ctypes.py_object).value
+- The function type_cast(address) converts an address address into a python object using the following code: return ctypes.cast(address, ctypes.py_object).value
 - The function xor(xor_a, xor_b) returns the xor of the inputs xor_a and xor_b
 - The function get_space_complexity(), returns the space complexity of the data structure
 - The function get_time_complexity(), returns the time complexity of find based on the number of elements in the list
