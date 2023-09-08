@@ -25,10 +25,11 @@ In a Binary Search Tree, the value of the left node should be lesser than that o
 
 ## Interface
 
-- The function insert(self, value) inserts value into the the tree trying to maintain its balance as a binary tree
+- The constructor __init__(self, value) initializes the value in the node, and initializes fields "left" and "right" to None.
+- The function insert(self, value) inserts value into the the tree trying to maintain its balance as a binary tree, i.e. inserting to the left if the value is less than the current value, and the right otherwise.
 - The function findval(self, data) returns True if a value is present in the tree and False if the value is not present
-- The function depth(self,node) returns the height of the binary tree from the root till the leaves
-- The function printbtree(self) prints the values in the tree
+- The function depth(self) returns the depth of the tree, i.e. the largest number of edges from the root to the node. A node with no children will have a depth of 0, a node with 1 child and no grandchildren will have a depth of 1, and so on.
+- The function printbtree(self) prints the values in the tree in order from smallest to largest, with one value per line and no extra white space.
 - The function delete_Node(self, key) deletes a particular value (key) from the tree. It returns False if there is no value to be deleted
 - The function get_space_complexity(), returns the space complexity of the data structure
 - The function get_time_complexity(), returns the time complexity of findval based on the number of elements in the tree
