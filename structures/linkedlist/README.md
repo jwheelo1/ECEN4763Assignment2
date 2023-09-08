@@ -24,12 +24,12 @@ An XOR linked list is a memory efficient doubly linked list. It has addresses to
 
 ## Interface
 
-## Node Class
+### Node Class
 - The helper Node class must contain two variables: value and xor_addr. The xor_addr will contian the address of the next node xor'd with the address of the previous node.
 - The function get_address(self) should simply return id(self)
 - The function get_value(self) should return the value stored in the Node
 
-## XORList Class
+### XORList Class
 - The constructor __init__(self, array=None) initializes the head and tail variables to None. Because Python will delete objects that are only referenced by their address, we also must initialize a set of Nodes in the list. Please do not directly use this set, it is only included so that the Nodes don't get deleted. The passed array variable can be used to populate the list, adding the nodes in order using self.insert_end.
 - The function get_head(self) gets the head pointer of the linked list.
 - The function get_tail(self) gets the tail pointer of the linked list.
@@ -46,7 +46,7 @@ An XOR linked list is a memory efficient doubly linked list. It has addresses to
 - The function delete_node(self, value) deletes the first node containing value. It should return value if successful, and None if not.
 - The function empty_list(self) deletes the entire linked list.
 
-## Helper Functions (Outside of Class)
+### Helper Functions (Outside of Class)
 - The function type_cast(address) converts an address address into a python object using the following code: return ctypes.cast(i_d, ctypes.py_object).value
 - The function xor(xor_a, xor_b) returns the xor of the inputs xor_a and xor_b
 - The function get_space_complexity(), returns the space complexity of the data structure
